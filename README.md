@@ -9,6 +9,11 @@ O documento a seguir, tem como objetivo demonstrar uma automação do processo d
 * Servidor do Jenkins
 * Zona de DNS no Route 53
 
-### Passo 1 
+### Passo 1
+Crie uma bucket S3, criei a bucket certificados-ssl.techroute.com.br
+
+![alt text](https://s3.amazonaws.com/imagens.techroute.com.br/certificado-1.png)
+
+### Passo 2
 Crie um usuário IAM na AWS com permissão de escrita na bucket S3
 
