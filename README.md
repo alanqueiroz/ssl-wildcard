@@ -8,3 +8,7 @@ O documento a seguir, tem como objetivo demonstrar uma automação do processo d
 * Usuário IAM com permissão de escrita na bucket S3
 * Servidor do Jenkins
 * Zona de DNS no Route 53
+
+# Passo 1 
+Crie um usuário IAM na AWS com permissão de escrita na bucket S3
+
