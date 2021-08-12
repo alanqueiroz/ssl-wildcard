@@ -4,7 +4,7 @@ O documento a seguir, tem como objetivo demonstrar uma automação do processo d
 
 # Pré-requisitos:
 
-* Bucket S3 - será utilizada para armazenar o certificado gerado a partir do job do jenkins
+* Bucket S3 - será utilizada para armazenar os certificados gerado a partir do job do jenkins
 * Usuário IAM com permissão de escrita na bucket S3
 * Servidor do Jenkins
 * Zona de DNS no Route 53
