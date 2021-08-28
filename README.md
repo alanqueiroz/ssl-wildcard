@@ -17,7 +17,7 @@ Crie uma bucket S3, para demonstração criamos a bucket<br> "certificados-ssl.t
 ![alt text](https://s3.amazonaws.com/imagens.techroute.com.br/certificado-1.png)
 
 #### Passo 2
-- Crie um usuário IAM na AWS
+- Crie um usuário IAM na AWS, criei como demonstração o usuário `svc.letsencrypt`
 #### Passo 2.1
 Crie uma policy IAM, com permissão de mudanças na zona de DNS do Route 53 e atache essa policy ao usuário criado no passo anterior, lembre-se de alterar o campo $ID_DA_ZONA pelo ID da sua zona de DNS.
 ```shell
