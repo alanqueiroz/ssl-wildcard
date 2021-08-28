@@ -81,9 +81,10 @@ Adicione um novo parâmetro, clicando em `[Add Parameter]` o tipo do parâmetro 
 ![alt text](https://s3.amazonaws.com/imagens.techroute.com.br/passo-3-job.png)
 
 #### Passo 6.1
-Em `Credential type` selecione `AWS Credentials` em `Default Value` clique em [Add] -> [Jenkins], esse passo é necessário se você ainda tem a credencial AWS cadastrada no seu Jenkins. Insira um descrito para credencial que está sendo cadastrada, preencha os campos conforme a imagem e clique em `[Add]`
+Em `Credential type` selecione `AWS Credentials` em `Default Value` clique em [Add] -> [Jenkins], esse passo é necessário se você ainda não tem a credencial AWS cadastrada no seu Jenkins. Insira um descritivo para credencial que está sendo cadastrada, preencha os campos conforme a imagem e clique em `[Add]`
 ![alt text](https://s3.amazonaws.com/imagens.techroute.com.br/passo-5-job-atualizada.png)
 
+![alt text](https://s3.amazonaws.com/imagens.techroute.com.br/passo-6-job.png)
 
 ```shell
 
