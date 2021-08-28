@@ -6,7 +6,7 @@ O documento a seguir, tem como objetivo demonstrar uma automação do processo d
 ## Pré-requisitos:
 
 * Bucket S3 - será utilizada para armazenar os certificados gerado a partir do job do jenkins
-* Usuário IAM na AWS
+* Usuário IAM (acesso apenas programático) na AWS
 * Policy com permissão de mudanças na zona de DNS do Route 53 
 * Policy com permissão de escrita (Put) na bucket S3 criada
 * Servidor do Jenkins
@@ -79,6 +79,10 @@ Abra o job criado no passo anterior, no campo `description` insira uma descriç�
 #### Passo 6
 Adicione um novo parâmetro, clicando em `[Add Parameter]` o tipo do parâmetro será `Credentials Parameter`
 ![alt text](https://s3.amazonaws.com/imagens.techroute.com.br/passo-3-job.png)
+
+#### Passo 6.1
+Em `Credential type` selecione `AWS Credentials` em `Default Value` clique em [Add] -> [Jenkins], esse passo é necessário se você ainda tem a credencial AWS cadastrada no seu Jenkins. Insira um descrito para credencial que está sendo cadastrada, preencha os campos conforme a imagem e clique em `[OK]`
+![alt text](https://s3.amazonaws.com/imagens.techroute.com.br/passo-5-job-atualizada.png)
 
 
 ```shell
