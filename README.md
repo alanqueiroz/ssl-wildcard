@@ -48,7 +48,7 @@ Crie uma policy IAM, com permissão de mudanças na zona de DNS do Route 53 e at
 }
 ```
 #### Passo 3
-Crie uma 
+Crie uma policy IAM com permissão de escrita (Put) na bucket criada no passo 1
 ```shell
 {
     "Version": "2012-10-17",
