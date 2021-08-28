@@ -86,6 +86,10 @@ Em `Credential type` selecione `AWS Credentials` em `Default Value` clique em [A
 
 ![alt text](https://s3.amazonaws.com/imagens.techroute.com.br/passo-6-job.png)
 
+#### Passo 7
+Desça a barra de rolagem para baixo e na sessão `Build Triggers` marque o item `Build periodically` defina os dias que deseja que o job seja executado, na demonstração, defini a execução todos os sábados às 21:00 
+![alt text](https://s3.amazonaws.com/imagens.techroute.com.br/passo-7-job.png)
+
 ```shell
 
 
