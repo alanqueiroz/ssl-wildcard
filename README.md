@@ -68,3 +68,12 @@ Crie uma policy IAM com permissão de escrita (Put) na bucket criada no passo 1 
     ]
 }
 ```
+#### Passo 4
+Crie um job `Freestyle project` no Jenkins, para fins de demonstração, definimos o nome `auto-renew-wildcard-ssl-techroute.com.br` defina um nome da sua preferência.
+![alt text](https://s3.amazonaws.com/imagens.techroute.com.br/job-1.png)
+
+
+```shell
+
+
+```
