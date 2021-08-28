@@ -13,7 +13,7 @@ O documento a seguir, tem como objetivo demonstrar uma automação do processo d
 * Zona de DNS no Route 53
 
 #### Passo 1
-Crie uma bucket S3, para demonstração criamos a bucket<br> "certificados-ssl.techroute.com.br"
+Crie uma bucket S3, para demonstração criamos a bucket "certificados-ssl.techroute.com.br"
 
 ![alt text](https://s3.amazonaws.com/imagens.techroute.com.br/certificado-1.png)
 
