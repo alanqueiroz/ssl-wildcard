@@ -50,3 +50,21 @@ Crie uma policy IAM, com permissão de mudanças na zona de DNS do Route 53 e at
 #### Passo 3
 Crie uma 
 ```shell
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": "s3:PutObject",
+            "Resource": "arn:aws:s3:::certificados-ssl.techroute.com.br/*"
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": "s3:ListAllMyBuckets",
+            "Resource": "*"
+        }
+    ]
+}
+```
