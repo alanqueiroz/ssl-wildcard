@@ -121,6 +121,6 @@ Em `Post-build Actions` selecione `Publish artifacts to S3 Bucket`
 ![alt text](https://s3.amazonaws.com/imagens.techroute.com.br/passo-9-job.png)
 
 #### Passo 10.1
-Configure o `Post-build Actions` conforme imagem abaixo e clique em `[Save]`:
+Configure o `Post-build Actions` conforme a imagem abaixo e clique em `[Save]`:
 ![alt text](https://s3.amazonaws.com/imagens.techroute.com.br/passo-10-job.png)
 
