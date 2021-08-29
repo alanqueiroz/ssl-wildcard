@@ -116,3 +116,9 @@ mv privkey* $DOMINIO_DO_CLIENTE-private.key
 mv fullchain* $DOMINIO_DO_CLIENTE-fullchain.pem
 mv cert* $DOMINIO_DO_CLIENTE-cert.pem
 ```
+#### Passo 10
+Em `Post-build Actions` selecione `Publish artifacts to S3 Bucket`
+![alt text](https://s3.amazonaws.com/imagens.techroute.com.br/passo-9-job.png)
+
+
+
