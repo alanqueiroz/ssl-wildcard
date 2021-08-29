@@ -101,17 +101,13 @@ Desça a barra de rolagem para baixo e na sessão `Build Triggers` marque o item
 Na sessão `Build`, selecione a opção `Execute Shell` e insira o script abaixo:
 
 ```shell
-WORKSPACE="/var/lib/jenkins/workspace/update-letsencrypt-route53-$DOMINIO_DO_CLIENTE"
-ARCHIVE="/var/lib/jenkins/workspace/update-letsencrypt-route53-$DOMINIO_DO_CLIENTE/config/archive"
-LIVE="/var/lib/jenkins/workspace/update-letsencrypt-route53-$DOMINIO_DO_CLIENTE/config/live"
-
-mkdir -p $WORKSPACE $ARCHIVE $LIVE
-cd $LIVE
-rm -rf $DOMINIO_DO_CLIENTE*
-cd $ARCHIVE
-rm -rf $DOMINIO_DO_CLIENTE*
-/usr/bin/certbot certonly --agree-tos --email alanqueiroz@outlook.com --config-dir $WORKSPACE/config --logs-dir $WORKSPACE/logs --work-dir $WORKSPACE/work --dns-route53 -n -d *.$DOMINIO_DO_CLIENTE --server https://acme-v02.api.letsencrypt.org/directory
-cd $DOMINIO_DO_CLIENTE*
+WORKSPACE="/var/jenkins_home/workspace/auto-renew-wildcard-ssl-techroute.com.br"
+cd $WORKSPACE
+rm -rf SSL
+mkdir SSL
+SSL="$WORKSPACE/SSL"
+/usr/bin/certbot certonly --agree-tos --email alanqueiroz@outlook.com --config-dir $SSL/config --logs-dir $SSL/logs --work-dir $SSL/work --dns-route53 -n -d *.$DOMINIO_DO_CLIENTE --server https://acme-v02.api.letsencrypt.org/directory
+cd SSL/config/archive/$DOMINIO_DO_CLIENTE
 mv privkey* $DOMINIO_DO_CLIENTE-private.key
 mv fullchain* $DOMINIO_DO_CLIENTE-fullchain.pem
 mv cert* $DOMINIO_DO_CLIENTE-cert.pem
