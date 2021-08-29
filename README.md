@@ -99,9 +99,9 @@ Desça a barra de rolagem para baixo e na sessão `Build Triggers` marque o item
 Na sessão `Build`, selecione a opção `Execute Shell` e insira o script abaixo:
 
 ```shell
-WORKSPACE="/var/lib/jenkins/workspace/update-letsencrypt-route53-techroute.com.br"
-ARCHIVE="/var/lib/jenkins/workspace/update-letsencrypt-route53-techroute.com.br/config/archive"
-LIVE="/var/lib/jenkins/workspace/update-letsencrypt-route53-techroute.com.br/config/live"
+WORKSPACE="/var/lib/jenkins/workspace/update-letsencrypt-route53-$CLIENTE"
+ARCHIVE="/var/lib/jenkins/workspace/update-letsencrypt-route53-$CLIENTE/config/archive"
+LIVE="/var/lib/jenkins/workspace/update-letsencrypt-route53-$CLIENTE/config/live"
 
 mkdir -p $WORKSPACE $ARCHIVE $LIVE
 sudo chown -R jenkins:jenkins $WORKSPACE $ARCHIVE $LIVE
