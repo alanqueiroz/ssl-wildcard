@@ -99,6 +99,7 @@ Desça a barra de rolagem para baixo e na sessão `Build Triggers` marque o item
 
 #### Passo 9
 Na sessão `Build`, selecione a opção `Execute Shell` e insira o script abaixo:
+Nota: Lembre-se de alterar o endereço de email da requisição
 
 ```shell
 WORKSPACE="/var/jenkins_home/workspace/auto-renew-wildcard-ssl-techroute.com.br"
