@@ -106,7 +106,6 @@ ARCHIVE="/var/lib/jenkins/workspace/update-letsencrypt-route53-$DOMINIO_DO_CLIEN
 LIVE="/var/lib/jenkins/workspace/update-letsencrypt-route53-$DOMINIO_DO_CLIENTE/config/live"
 
 mkdir -p $WORKSPACE $ARCHIVE $LIVE
-chown -R jenkins:jenkins $WORKSPACE $ARCHIVE $LIVE
 cd $LIVE
 rm -rf $DOMINIO_DO_CLIENTE*
 cd $ARCHIVE
@@ -116,6 +115,4 @@ cd $DOMINIO_DO_CLIENTE*
 mv privkey* $DOMINIO_DO_CLIENTE-private.key
 mv fullchain* $DOMINIO_DO_CLIENTE-fullchain.pem
 mv cert* $DOMINIO_DO_CLIENTE-cert.pem
-cd -
-chown -R jenkins:jenkins $WORKSPACE
 ```
