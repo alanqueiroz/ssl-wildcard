@@ -7,7 +7,7 @@ O documento a seguir, tem como objetivo demonstrar uma automação do processo d
 
 * Bucket S3 - será utilizada para armazenar os certificados gerado a partir do job do jenkins
 * Usuário IAM (acesso apenas programático) na AWS
-* Os seguintes pacotes instalados no sistema operacional do Jenkins ( `awscli  python3-certbot-nginx e python3-certbot-dns-route53` )
+* Os seguintes pacotes instalados no sistema operacional do Jenkins (`awscli python3-certbot-nginx e python3-certbot-dns-route53`)
 * Policy com permissão de mudanças na zona de DNS do Route 53 
 * Policy com permissão de escrita (Put) na bucket S3 criada
 * Servidor do Jenkins
@@ -15,7 +15,7 @@ O documento a seguir, tem como objetivo demonstrar uma automação do processo d
 
 #### Passo 1
 ```shell
-sudo apt-get install awscli  python3-certbot-nginx e python3-certbot-dns-route53
+sudo apt-get install awscli python3-certbot-nginx e python3-certbot-dns-route53
 ```
 #### Passo 2
 Crie uma bucket S3, para demonstração criamos a bucket "certificados-ssl.techroute.com.br"
@@ -120,5 +120,7 @@ mv cert* $DOMINIO_DO_CLIENTE-cert.pem
 Em `Post-build Actions` selecione `Publish artifacts to S3 Bucket`
 ![alt text](https://s3.amazonaws.com/imagens.techroute.com.br/passo-9-job.png)
 
-
+#### Passo 10.1
+Configure o `Post-build Actions` conforme imagem abaixo e clique em `[Save]`:
+![alt text](https://s3.amazonaws.com/imagens.techroute.com.br/passo-10-job.png)
 
