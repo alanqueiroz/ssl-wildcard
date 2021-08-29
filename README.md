@@ -81,7 +81,7 @@ Crie um job `Freestyle project` no Jenkins, para fins de demonstração, definim
 
 #### Passo 6
 Abra o job criado no passo anterior, no campo `description` insira uma descrição que corresponda com o propósito do job, marque a opção "This project is parameterized", do tipo `String Parameter`, ou seja, job que recebe parâmetros do tipo string, exemplo abaixo:
-![alt text](https://s3.amazonaws.com/imagens.techroute.com.br/passo2-job.png)
+![alt text](https://s3.amazonaws.com/imagens.techroute.com.br/passo6-job.png)
 
 #### Passo 7
 Adicione um novo parâmetro, clicando em `[Add Parameter]` o tipo do parâmetro será `Credentials Parameter`
