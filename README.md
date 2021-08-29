@@ -24,8 +24,7 @@ Crie uma bucket S3, para demonstração criamos a bucket "certificados-ssl.techr
 
 #### Passo 3
 - Crie um usuário IAM na AWS, criei como demonstração o usuário `svc.letsencrypt`
-#### Passo 3.1
-Crie uma policy IAM, com permissão de mudanças na zona de DNS do Route 53 e atache essa policy ao usuário criado no passo anterior, lembre-se de alterar o campo $ID_DA_ZONA pelo ID da sua zona de DNS.
+
 ```shell
 {
     "Version": "2012-10-17",
@@ -73,6 +72,9 @@ Crie uma policy IAM com permissão de escrita (Put) na bucket criada no passo 1 
     ]
 }
 ```
+#### Passo 4.1
+- Configure as credenciais IAM da AWS no servidor do Jenkins por meio do comando `aws configure` no terminal, caso o servidor do Jenkins seja um EC2 da AWS, crie uma role e associe as policies dos passos 3.2 e 4
+
 #### Passo 5
 Crie um job `Freestyle project` no Jenkins, para fins de demonstração, definimos o nome `auto-renew-wildcard-ssl-techroute.com.br` defina um nome da sua preferência, clique em [OK] para salvar.
 ![alt text](https://s3.amazonaws.com/imagens.techroute.com.br/job-1.png)
