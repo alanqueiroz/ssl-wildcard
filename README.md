@@ -15,7 +15,7 @@ O documento a seguir, tem como objetivo demonstrar uma automação do processo d
 
 #### Passo 1
 ```shell
-sudo apt-get install awscli python3-certbot-nginx e python3-certbot-dns-route53 -y
+sudo apt-get install awscli python3-certbot-nginx python3-certbot-dns-route53 -y
 ```
 #### Passo 2
 Crie uma bucket S3, para demonstração criamos a bucket "certificados-ssl.techroute.com.br"
